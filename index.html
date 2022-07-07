@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>HTML basics - Inicio</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML - Basics</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#">BASICO</a></li>
+                    <li><a href="./pages/tags.html">ETIQUETAS</a></li>
+                    <li><a href="./pages/links.html">ENLACES LISTAS & MULTIMEDIA</a></li>
+                    <li><a href="./pages/forms.html">FORMULARIOS</a></li>
+                    <li><a href="./pages/meta.html">METAINFORMACION</a></li>
+                    <li><a href="./pages/tablas.html">TABLAS & COLORES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h4>Contenidos</h4>
+            <ul class="page-nav">
+                <li><a href="#qehtml">¿Que es html?</a></li>
+                <li><a href="#elementos">elementos</a></li>
+                <li><a href="#tipos">tipos</a></li>
+                <li><a href="#estructura">estructura</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <article>
+                <h2 id="qehtml">¿Qué es html?</h1>
+                <p>Según sus siglas "Lenguaje de Marcas de hipertexto"</p>
+                <p>
+                    Cuando se crea una página la primera debe recibir el nombre 
+                    de index.html ya que el servidor buscara este archivo en primer lugar.
+                </p>
+            </article>
+        
+            <article>
+                <h2 id="elementos">Elementos de html</h2>
+                <p>
+                    Etiquetas: Van entre simbolos mayor y menor 
+                    &lt;Etiqueta&gt; CONTENIDO &lt;/Etiqueta&gt;
+                </p>
+                <p> 
+                    Atributos: Van dentro de las llaves y tienen asignado un valor 
+                    &lt;Etiqueta atributo="valor"&gt;. Cuando el atributo no requiere
+                    un valor no es necesario usar los simbolos ="" por lo tanto la disposicion
+                    sería la siguiente &lt;Etiqueta atributo&gt;
+                </p>
+                
+            </article>
+            <article>
+                <h2 id="tipos">Tipos de Etiquetas:</h2>
+                <p>Abiertas: Solo requieren una etiqueta, no dos. Ej: &lt;hr&gt; </p>
+                <p>Cerradas: Requieren de ambas etiquetas &lt;Etiqueta&gt; &lt;/Etiqueta&gt; </p>
+            </article>
+            <article>
+                <h2 id="estructura">Estructura basica</h2>
+                <p>
+                    <b>&lt;!DOCTYPE html&gt;</b> Sirve para especificar al navegador la version de html 
+                    usada, en este caso se trata de la ultima version.
+
+                    <br><br>
+
+                    <b>&lt;html&gt;</b> Etiqueta principal y es donde va a estar contenida toda la página, 
+                    tanto lo que podemos ver como lo que no podemos ver de la página
+
+                    <br><br>
+
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</b> Etiqueta que aloja todo aquello que no se ve en el cuerpo principal 
+                    de la página
+
+                    <br><br>
+
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</b>
+
+                    <br><br>
+
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</b> Todo aquello que es "visible" de la página
+
+                    <br><br>
+
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</b>
+
+                    <br><br>
+
+                   <b>&lt;/html&gt;</b>
+                </p>
+
+                <p>Nota: Los archivos html pueden terminar con html o htm</p>
+            </article>
+        </section>
+    </body>
+</html>

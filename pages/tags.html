@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF_8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>HTML basics - Etiquetas</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML - Tags</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="../index.html">BASICO</a></li>
+                    <li><a href="#">ETIQUETAS</a></li>
+                    <li><a href="./links.html">ENLACES LISTAS & MULTIMEDIA</a></li>
+                    <li><a href="./forms.html">FORMULARIOS</a></li>
+                    <li><a href="./meta.html">METAINFORMACION</a></li>
+                    <li><a href="./tablas.html">TABLAS & COLORES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h4>Contenidos</h4>
+            <ul class="page-nav">
+                <li><a href="#etiquetas">etiquetas</a></li>
+                <li><a href="#lineaybloque">en linea y bloque</a></li>
+                <li><a href="#tiposhtml5">tipos de etiqueta html5</a></li>
+                <li><a href="#htmlsemantico">htmlsemantico</a></li>
+            </ul>
+        </section>
+        <section>
+            <article>
+                <h2 id="etiquetas">Etiquetas</h2>
+                <h3>Encabezados &lt;h1&gt; Text  &lt;/h1&gt;</h3>
+                <p>Etiqueta de bloque; Van del h1 al h6 y es buena práctica usar solo 1 h1
+                    por página ya que los motores de busqueda lo utilizan (SEO)
+                </p>
+            
+                <br>
+            
+                <h3>Etiqueta parrafo &lt;p&gt; Texto &lt;/p&gt; </h3>
+                <p>Etiqueta de bloque; que espera un párrafo</p>
+
+                <br>
+                <h3>Etiqueta negrita &lt;b&gt; Texto &lt;/b&gt; &lt;strong&gt; Texto &lt;/strong&gt; </h3>
+                <p>Etiqueta de línea, da el estilo <b>NEGRITA</b> <strong>NEGRITA</strong></p>
+
+                <br>
+                <h3>Etiqueta cursiva(italica) &lt;i&gt; Texto &lt;/i&gt; </h3>
+                <p>Etiqueta de línea, da el estilo <i>Cursiva</i></p>
+
+                <br>
+                <h3>Etiqueta tachada &lt;strike&gt; Texto &lt;/strike&gt; &lt;del&gt; Texto &lt;/del&gt; </h3>
+                <p>Etiqueta de línea, da el estilo <strike>Tachado</strike> <del>Tachado</del></p>
+
+                <br>
+                <h3>Etiqueta letra pequeña &lt;small&gt; Texto &lt;/small&gt; </h3>
+                <p>Etiqueta de línea, letra <small>Pequeña</small></p>
+
+                <h3>Etiqueta subindice &lt;sub&gt; Texto &lt;/sub&gt; </h3>
+                <p>Etiqueta de línea, letra <sub>Subindice</sub></p>
+
+                <h3>Etiqueta superindice &lt;sup&gt; Texto &lt;/sup&gt; </h3>
+                <p>Etiqueta de línea, letra <sup>Supindice</sup></p>
+
+                <h3>Etiqueta br &lt;br&gt; </h3>
+                <p>Etiqueta de bloque (abierta), termina de completar la línea "La rellena"</p>
+
+                <h3>Etiqueta hr &lt;hr&gt; </h3>
+                <p>Etiqueta de bloque (abierta), es una linea horizontal separadora</p>
+
+                <h3>Etiqueta de comentario &lt;!--Comentario--&gt; </h3>
+                <p>El contenido de esta etiqueta no se tendra en cuenta, sirve para comentar dentro de la estructura de la pagina</p>
+
+                <h3>Etiqueta de subrayado &lt;ins&gt; Texto &lt;/ins&gt; </h3>
+                <p>Etiqueta de línea, letra <ins>Subrayada</ins></p>
+
+                <h3>Etiqueta de letra grande &lt;big&gt; Texto &lt;/big&gt; </h3>
+                <p>Etiqueta de línea, letra <big>grande</big></p>
+
+                <h3>Etiqueta de letra pequeña &lt;small&gt; Texto &lt;/small&gt; </h3>
+                <p>Etiqueta de línea, letra <small>pequeña</small></p>
+                
+                <h3>center &lt;center&gt;contenido &lt;/center&gt; </h3>
+                <p>Sirve pare centrar todo el contenido dentro de ella</p>
+                <br>             
+            </article>
+            
+            <article>
+                <h2 id="lineaybloque">En línea y En bloque</h1>
+                <h3>En línea</h2>                
+                <p>Las etiquetas de línea solo ocupan el ancho del elemento como por ejemplo "span"</p>
+                    <ul>
+                        <li>Aparentemente no se puede modificar el ancho de un contenedor "inline"(objeto defectuoso) mediante atributos</li>
+                        <li>Si el contenedor de linea tiene adentro un elemento en bloque este no será tan grande como el de bloque a pesar de contenerlo</li>
+                        <li>Si adentro tiene un elemento en linea como el contenedor este se adaptara al tamaño del elemento de linea</li>
+                    </ul>
+                <br>
+                <div style="display: inline; border:10px solid black; background-color: green; width:300px">
+                    <span style="background-color:red;">DIV DE LINEA & ETIQUETA DE LINEA</span>
+                </div>
+                <div style="display: inline; border:10px solid black; background-color: green; width:300px">
+                    <h2 style="background-color:red;">DIV DE LINEA & ETIQUETA DE BLOQUE </h2>
+                </div>    
+                <br>
+                <h3>En bloque</h3>
+                <br>
+                <p>Las etiquetas de bloque ocupan todo el ancho de la página</p>
+                <ul>
+                    <li>Si el contenedor es de <b>LINEA</b> la etiqueta de <b>bloque</b> ocupara toda su linea(o espacio especificado)</li>
+                    <li>Si el contenedor es de <b>BLOQUE</b> la etiqueta de <b>bloque</b> ocupara el ancho del contenedor padre </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 id="tiposhtml5">Tipos de etiquetas en HTML5</h2>
+                <ul>
+                    <li>
+                        <b>Metadata content:</b> 
+                        Los elementos que pertenecen a la categoría de contenido de metadatos modifican la presentación o el comportamiento del resto del documento, 
+                        establecen enlaces a otros documentos o transmiten otra información fuera de banda.
+                    </li>
+                    <li>
+                        <b>Flow content:</b>
+                        Flow content is a broad category that encompasses most elements that can go inside the <body> element, including heading elements, sectioning elements, 
+                        phrasing elements, embedding elements, interactive elements, and form-related elements. It also includes text nodes (but not those that only consist of white space characters).
+                    </li>
+                    <li>
+                        <b>Sectioning content:</b>
+                        El contenido de secciones es un subconjunto del contenido de flujo y se puede usar en cualquier lugar donde se espere contenido de flujo. 
+                        Los elementos que pertenecen al modelo de contenido de sección crean una sección en el esquema actual que define el alcance de los elementos header>, los elementos footer> y el contenido del encabezado.
+                    </li>
+                    <li>
+                        <b>Heading content:</b>
+                        El contenido del encabezado es un subconjunto del contenido de flujo, que define el título de una sección, ya sea marcado por un elemento de contenido de sección explícito o definido implícitamente por el propio contenido del encabezado. 
+                        El contenido del encabezado se puede usar en cualquier lugar donde se espere contenido de flujo.
+                    </li>
+                    <li>
+                        <b>Phrasing content</b>
+                        El contenido de fraseo es un subconjunto del contenido de flujo que define el texto y el marcado que contiene, y se puede usar en cualquier lugar donde se espere contenido de flujo. Las rachas de contenido de redacción forman párrafos.
+                    </li>
+                    <li>
+                        <b>Embedded content:</b>
+                        El contenido incrustado es un subconjunto del contenido de flujo que importa otro recurso o inserta contenido de otro lenguaje de marcado o espacio de nombres en el documento, y se puede usar en cualquier lugar donde se espere contenido de flujo. 
+                        Los elementos que pertenecen a esta categoría incluyen: audio, canvas, embed, iframe, img, math, object, picture, svg, video.
+                    </li>
+                    <li>
+                        <b>Interactive content:</b> 
+                            El contenido interactivo es un subconjunto del contenido de flujo que incluye elementos diseñados específicamente para la interacción del usuario y se puede usar en cualquier lugar donde se espere contenido de flujo. Los elementos que pertenecen a esta categoría incluyen: 
+                            a, button, details, embed, iframe, keygen>Obsoleto, label, select y textarea. Algunos elementos pertenecen a esta categoría solo bajo condiciones específicas:
+                            audio>, if the controls attribute is present
+                            img>, if the usemap attribute is present
+                            input>, if the type attribute is not in the hidden state
+                            menu>, if the type attribute is in the toolbar state
+                            object>, if the usemap attribute is present
+                            video>, if the controls attribute is present
+                            
+                    </li>
+                    <li><img src="../img/contents.jpg"></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 id="htmlsemantico">HTML SEMANTICO</h2>
+                <h3>header &lt;header&gt; CONTENIDO &lt;/header&gt;</h3>
+                <p>Etiqueta de bloque, se usa para colocar el logo, un formulario de navegacion e incluso tambien el nav a veces</p>
+                
+                
+                <h3>nav &lt;nav&gt; CONTENIDO &lt;/nav&gt;</h3>
+                <p>Etiqueta de bloque, contiene enlaces de navegacion</p>
+                     
+                <h3>article &lt;article&gt; CONTENIDO &lt;/article&gt;</h3></h3>
+                <p>Etiqueta de bloque, contenido principal de la página, suele usarse uno y se divide en secciones</p>
+                
+                <h3>section &lt;section&gt; CONTENIDO &lt;/section&gt;</h3>
+                <p>Etiqueta de bloque, subcontenidos del contenedor article</p>
+    
+                <h3>aside &lt;aside&gt; CONTENIDO &lt;/aside&gt;</h3>
+                <p>Etiqueta de bloque, Contenido adicional de la página se coloca al lado del article </p>
+    
+                <h3>footer &lt;footer&gt; CONTENIDO &lt;/footer&gt;</h3>
+                <p>Etiqueta de bloque, pie de pagina con enlaces de interes, copyright, textos legales, etc.  </p>
+            </article>
+
+        </section>
+
+    </body>
+</html>

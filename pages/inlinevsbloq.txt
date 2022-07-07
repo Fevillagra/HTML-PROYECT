@@ -1,0 +1,22 @@
+Inline
+<a>.- etiqueta de enlace.
+<code>.- para fragmentos de código.
+<em>.- Texto negrita.
+<i>.- etiqueta para cursiva.
+<img>.- para imagenes.
+<input>.- campos de formulario.
+<span>.- fragmentes de contenido.
+<strong>.- texto fuerte.
+<sub>.- para texto subíndice.
+<sup>.- texto superíndice.
+<u>.- para subrayar texto.
+https://developer.mozilla.org/es/docs/Web/HTML/Inline_elements
+
+Block
+<div>.- elemento contenedor.
+<p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>.- párrafos y textos encabezados.
+<ul>, <ol>, <li>.- los elementos de lista.
+<table>, <tr>, <td>.- elementos de tabla.
+<dl>, <dd>, <dt>.- los elementos de definiciones.
+etc.
+https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements

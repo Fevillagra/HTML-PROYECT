@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>HTML basics - Enlaces Listas & Multimedia</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML - Enlaces</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="../index.html">BASICO</a></li>
+                    <li><a href="./tags.html">ETIQUETAS</a></li>
+                    <li><a href="#">ENLACES LISTAS & MULTIMEDIA</a></li>
+                    <li><a href="./forms.html">FORMULARIOS</a></li>
+                    <li><a href="./meta.html">METAINFORMACION</a></li>
+                    <li><a href="./tablas.html">TABLAS & COLORES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h4>Contenidos</h4>
+            <ul class="page-nav">
+                <li><a href="#enlaces">enlaces</a></li>
+                <li><a href="#listas">listas</a></li>
+                <li><a href="#multimedia">multimedia</a></li>
+            </ul>
+        </section>
+        <section>
+            <article>
+                <h2 id="enlaces">&lt;a href="link"&gt;Enlaces&lt;/a&gt;</h2>
+                <p> Etiqueta de linea. Existen dos tipos de rutas dentro de los links, las rutas <b>locales</b> y las <b>externas</b></p>
+                <p>Si es externa el link recibira http o htpps(hipertext transfer protocol)</p>
+
+                <br>
+
+                <h3>Links relativos</h2>
+                <p>Si deseara entrar a una carpeta que esta en mi mismo nivel sería: href="carpeta/index.tml"</p>
+                <p>Si está una carpeta atrás sería href="../index.html" </p>
+                <p>Si está en la misma carpeta sería href="./index.html o index.html"</p>
+
+                <h3>Atributo target="_BLANK"</h2>
+                <p>Abre el link en una nueva pestaña</p>
+
+                <h3>Moverse dentro de la página href="#id"</h2>
+                <p>Al hacerle click nos dirigiremos dentro de la página a la etiqueta que tenga el id="palabra"</p>
+
+            </article>
+            <article>
+                <h2 id="listas">Listas</h2>
+                <h3>Listas ordenadas &lt;ol&gt; &lt;/ol&gt;</h2>
+                <p> 
+                    Etiqueta de bloque; Los ítems reciben un numero por cada elemento
+                     &lt;li&gt; Texto &lt;/li&gt; estos tambien son de bloque
+                </p>
+                <ol>
+                    <li>Pan</li>
+                    <li>Huevos</li>
+                    <li>Agua</li>
+                </ol>
+
+                <h3>Lista sin orden &lt;ul&gt; &lt;/ul&gt;</h2>
+                <p>
+                    Etiqueta de bloque, los ítems no reciben enumeración
+                </p>
+                <ul>
+                    <li>Pan</li>
+                    <li>Huevos</li>
+                    <li>Agua</li>
+                </ul>
+            </article>
+            <article>
+                <h2 id="multimedia">Multimedia</h2>
+                                
+                <h3>Imagen &lt;img src="RUTA" alt="Nombre alternativo"&gt;</h2>
+                <p>
+                    Etiqueta de línea; el atributo src recibe la ruta, y el nombre alternativo
+                    Aparece solo en caso de que sea un navegador para no videntes o que el formato
+                    no sea soportado. Si decido usar el atributo width no debo darle atributo height
+                    ya que la imagen se ajusta completamente a una de las dos, si especifico las dos
+                    se deformara
+                </p>
+                <p>El atributo title="info" Sirve para que cuando se pase el cursor sobre la imagen aparecera un titulo de la imagen</p>
+                
+                <h3>Video &lt;video src="Ruta" controls=""&gt; &lt;/video&gt; </h2>
+                <p>
+                    Etiqueta de bloque, el atributo controls le da controles al video. Entre sus
+                    Etiquetas debería haber un mensaje que aparecera en caso de que el navegador no tolere
+                    el formato 
+                </p>
+                <p>
+                    Se puede emplear la etiqueta <b>source</b>(etiqueta abierta) para determinar la ruta
+                </p>
+                <p>
+                    Atributo: <b>autoplay</b> El video comienza a reproducirse a penas se cargue.
+                </p>
+                <p>
+                    Atributo: <b>loop</b> El video se reproduce de manera indefinida
+                </p>
+                     
+                <h3>Audio &lt;audio src="Ruta" controls=""&gt; &lt;/audio&gt; </h2>
+                <p>
+                    Etiqueta de bloque; la etiquetas &lt;source src="audio.mp3" type="audio/mpeg/"&gt; y &lt;source src="audio.ogg" type="audio/ogg"&gt;
+                    sirven para especificar la ruta.Entre sus
+                    Etiquetas debería haber un mensaje que aparecera en caso de que el navegador no tolere
+                    el formato.
+                </p>
+                <p>atributo <b>autoplay=""</b> Cuando se define este atributo, el audio comienza a reproducirse tan pronto como esté listo, sin pedir permiso al visitante.</p>
+                <p>el atributo <b>loop=""</b> Sirve para reproducir de manera indefinida</p>
+            </article>
+        </section>
+    </body>
+</html>

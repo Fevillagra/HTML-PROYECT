@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF_8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>HTML - Formularios</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML - FORMULARIOS</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="../index.html">BASICO</a></li>
+                    <li><a href="./tags.html">ETIQUETAS</a></li>
+                    <li><a href="./links.html">ENLACES LISTAS & MULTIMEDIA</a></li>
+                    <li><a href="./forms.html">FORMULARIOS</a></li>
+                    <li><a href="./meta.html">METAINFORMACION</a></li>
+                    <li><a href="./tablas.html">TABLAS & COLORES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h4>Contenidos</h4>
+            <ul class="page-nav">
+                <li><a href="#forms">forms</a></li>
+                <li><a href="#input">input</a></li>
+                <li><a href="#progres">progres</a></li>
+            </ul>
+        </section>
+        <section>
+            <article>
+                <h2 id="forms">forms &lt;form method=""&gt; &lt;/form&gt; </h2>
+                <p>
+                    Etiqueta de bloque; sobre la que se coloca controles interactivos
+                    normalmente hay etiquetas de input contenidas en ella. <br>
+                    El metodo especifica como sera enviada la informacion <br>
+                    Method <b>get</b> Por dejecto, get” indica que los datos enviados se adjuntarán 
+                    en la barra de direcciones del cliente, al final de la url correspondiente y 
+                    después de un signo de interrogación de cierre. Si se envía más de un dato, éstos irán separados 
+                    por el símbolo &. El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos. <br>
+                    Method<b>post</b> es aquel que envia al servidor (metodo seguro) El método POST se utiliza para enviar 
+                    una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
+                </p>
+
+
+
+                <h2 id="input">input &lt;input type="tipo" name="" value=""&gt;</h2>
+                <p> label &lt;label for="mismo id que input o name"&gt;</p>
+                <p>
+                    Etiqueta de linea; mediante la cual se le solicita informacion al usuario,
+                    recibe un atributo nombre para que pueda interactuar con el servidor. <br>
+                    Atributo <b>name</b> igual que id se usa para ser referenciado en Js
+                    Atributo <b>placeholder</b> es lo que aparecera en un color tenue en el lugar que se escribe<br>
+                    Dentro de type(tipos de input) puede haber: <br>
+
+                </p>
+
+                
+
+                <ol class="inputs">
+                    <li><strong>text</strong> Espera entrada de texto, por defecto aparece type="text"</li> 
+                    <li><strong>password</strong> Espera entrada de texto no visible para teclear contraseñas y claves </li>
+                    <li><strong>number</strong> Contiene dos botones para elegir numeros </li>
+                    <li><strong>email</strong> Espera la entrada de un texto con formato email</li>
+                    <li><strong>color</strong> Se puede seleccionar un color</li>
+                    <li>
+                        <strong>range min="numero" max="numero"</strong> Nos permite elegir un numero dentro de un rango mediante 
+                        una interfaz donde el seleccionador esta sobre un slide                         </li>
+                    <li><strong>date</strong> Sirve para que el usuario seleccione una fecha  </li>
+                    <li><strong>time</strong> Sirve para que el usuario seleccione una hora </li>
+                    <li>
+                        <strong>button value="boton"</strong>  Es un boton, las palabras contenidas en el estaran especificadas 
+                    en el atributo value 
+                    </li>                        
+                    <li><strong>submit</strong> Es un boton para enviar el servidor la informacion </li>
+                    <li>
+                        <strong>Required=""</strong> Es un atributo que hace requisito que el input
+                        sea completado en caso de que el usuario desee enviarlo
+                    </li>
+                    <li>
+                        <b>&lt;textarea&gt;texto&lt;textarea&gt;</b> Es una etiqueta de linea; para escribir texto en ella. <br>
+                        El atributo readonly="" prohibe cualquier modificacion sobre el
+                    </li>
+                    <li>El atributo que aloja el texto escrito en el imput es <b>value</b></li>
+                    <li>action="" Es el atributo con el url a donde se mandara la pagina(form)</li>
+                    <li><b>radio</b> Un circulo que se puede seleccionar</li>
+                    <li><b>checkbox</b>Una caja que se puede seleccionar</li>
+                    <li><b>autofucus=""</b> (atributo)Pone el cursor de manera automatica en el especificado</li>
+                    <li>&lt;datalist id="colors"&gt; <br> &lt;option value="text"&gt; <br> &lt;/datalist&gt;
+                    especifica una lita de opciones a elegir a un input text el id de datalist va igual que el valor
+                    del atributo list="colors"
+                    </li>
+                </ol>
+                
+            </article>
+            <article>
+                <h2 id="progres">Progreso  &lt;progress min="0" max="100" value="50"&gt; &lt;/progress&gt; </h2>
+                <p>Etiqueta de línea; márca el progreso en un proceso</p>
+                <p>
+                    Atributo <b>min</b> Marca desde donde empieza a contar el progreso.
+                </p>
+                <p>
+                    Atributo <b>max</b> Marca el total necesario para completar el progreso.
+                </p>
+                <p>
+                    Atributo <b>value</b> Marca el progreso actual
+                </p>
+            </article>
+        </section>
+    </body>
+</html>

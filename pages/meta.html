@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>HTML - Metainformacion</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML - Metainformacion</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="../index.html">BASICO</a></li>
+                    <li><a href="./tags.html">ETIQUETAS</a></li>
+                    <li><a href="./links.html">ENLACES LISTAS & MULTIMEDIA</a></li>
+                    <li><a href="./forms.html">FORMULARIOS</a></li>
+                    <li><a href="#">METAINFORMACION</a></li>
+                    <li><a href="./tablas.html">TABLAS & COLORES</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section>
+                <h4>Contenidos</h4>
+                <ul class="page-nav">
+                    <li><a href="#meta">meta</a></li>
+                </ul>
+            </section>
+        <section>
+            <article>
+                <h2 id="meta">Metadatos &lt;meta&gt;</h2>
+                <p>Es información que describe otra información "Datos que describen otros datos"</p>
+                <p>Son etiquetas abiertas que van sobre el head</p>
+                <h3>Atributos</h3>
+                <ul class="meta">
+                    <li>
+                        charset="UTF-8" agrega todos los caracteres especiales, tales como tildes y ñ que de otra manera
+                        no serian interpretados por el navegador correctamente
+                    </li>
+                    <li>
+                        name="keywords" content="Palabras relacionadas con el sitio" Es utilizada para que el motor de busqueda
+                        relacione las palabras de content con la página
+                    </li>
+                    <li>
+                        name="description" content="Descripcion de la página, no del sitio" Entre 140 y 160 caracteres"
+
+                    </li>
+                    <li>
+                        name="author" content="nombre del autor"
+                    </li>
+                    <li>
+                        name="copyright" content="Nombre de la empresa dueña de los derechos"
+                    </li>
+                    <li>
+                        name="robots" content="index" tambien puede ir "noindex" en caso de index el buscador mostrara nuestra pagina
+                        en caso contrario no la tendra en cuenta
+                    </li>
+                </ul>
+                <h3>link &lt;link rel="icon" href="imagen.ico" &gt; </h2>
+                <p>Coloca un icono en la pestaña de la página</p>
+                <h3>link &lt;link rel="stylesheet" href="style.css" &gt; </h2>
+                <p>Linkea la pagina del css, antes se usaba  &lt;style&gt; css &lt;/style&gt; (obsoleto)</p>
+                <h3>js &lt;script src="index.js"&gt; JS &lt;script&gt;</h2>
+                <p>Al final del body, antes de colocaba el codigo entre las etiquetas(obsoleto), ahora se llama a través del atributo src=""</p>
+
+            </article>
+        </section>
+    </body>
+</html>
